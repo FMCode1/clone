@@ -1,0 +1,634 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f8f8f8;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+}
+
+.material-symbols-outlined {
+  font-size: 32px;
+  color: #1e3a8a; /* navy tone */
+}
+
+
+nav {
+  display: flex;                   /* Makes child elements (ul + social-links) sit in a row */
+  justify-content: space-between;  /* Left and right spacing */
+  align-items: center;             /* Vertically centers them */
+  padding: 15px 40px;
+  background-color: #1e3a8a;
+}
+
+.nav-links {
+  display: flex;        /* Make the list horizontal */
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;        /* Icons in a row */
+  gap: 15px;
+  font-size: 24px;
+}
+
+.social-links a {
+  color: white;
+}
+
+
+.hero {
+  height: 100vh;                  /* Full viewport height */
+  width: 100%;                     /* Full width */
+  background-color: #000000;       /* Temporary background */
+  display: flex;
+  justify-content: center;         /* Center content horizontally */
+  align-items: center;             /* Center content vertically */
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.upcoming-events {
+  padding: 60px 40px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.upcoming-events h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1e3a8a;
+}
+
+.events-container {
+  display: flex;             /* Arrange events in a row */
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;           /* Wrap to next line if screen is narrow */
+}
+
+.event-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;              /* Fixed width per card */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.event-date {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.event-desc {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+
+.give-life-to-christ {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #1e3a8a;
+}
+
+.give-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  max-width: 800px;
+  gap: 20px;
+}
+
+.pray-icon {
+  font-size: 60px;
+  color: #1e3a8a;
+}
+
+.give-text h2 {
+  margin: 0 0 10px 0;
+  color: #1e3a8a;
+  font-size: 2rem;
+}
+
+.give-text p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+
+.connect {
+  padding: 60px 40px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.connect-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.connect h2 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.connect p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.connect-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #15407b;
+}
+
+.btn-secondary {
+  background-color: #f5a623;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #e08e1f;
+}
+
+
+.requests {
+  padding: 60px 40px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.requests h2 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+}
+
+.requests-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.request-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 250px;
+  text-align: center;
+}
+
+.request-icon {
+  font-size: 50px;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.request-card h3 {
+  margin: 10px 0;
+  color: #1e3a8a;
+}
+
+.request-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+.core-ministries {
+  padding: 60px 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.core-ministries h2 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+}
+
+.ministries-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.ministry-card {
+  background: #f8f8f8;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.ministry-icon {
+  font-size: 50px;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.ministry-card h3 {
+  margin: 10px 0;
+  color: #1e3a8a;
+}
+
+.ministry-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.all-ministries-btn {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.all-ministries-btn .btn {
+  padding: 12px 25px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.all-ministries-btn .btn:hover {
+  background-color: #15407b;
+}
+
+
+.site-footer {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+}
+
+.social-links a {
+  color: white;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+}
+
+
+/* About Page */
+.about-page {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-page h2, p {
+    text-align: center;
+}
+
+.about-section {
+    height: 100vh;
+    margin: 100px;
+    font-size:xx-large;
+}
+
+.about-section h2 {
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.value-card {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.value-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+/* Live Page */
+.live-page {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.live-page h2 {
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #1e3a8a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.live-page p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Countdown */
+.next-service {
+  margin-bottom: 30px;
+}
+
+.next-service h3 {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+#countdown {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Welcome text */
+.live-welcome {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA button */
+.live-cta .btn {
+  padding: 12px 25px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.live-cta .btn:hover {
+  background-color: #15407b;
+}
+
+
+/* Grow Page */
+.grow-page {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.grow-page h2 {
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #1e3a8a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.grow-page p {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.grow-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.grow-card {
+  background-color: #f8f8f8;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.grow-icon {
+  font-size: 50px;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.grow-card h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.grow-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Newcomers Page */
+.newcomers-page {
+  padding: 80px 40px; /* more space around the whole page */
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newcomers-page h2 {
+  color: #1e3a8a;
+  font-size: 2.5rem;
+  margin-bottom: 30px; /* more space under main heading */
+  border-bottom: 3px solid #1e3a8a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.newcomers-page p {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 40px; /* more space after paragraphs */
+}
+
+.handbook,
+.expectations,
+.newcomers-cta {
+  margin-bottom: 60px; /* separate sections */
+  padding: 20px 10px;
+  background-color: #f9f9f9; /* subtle section background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.handbook h3,
+.expectations h3 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.expectations ul {
+  list-style: disc inside;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.newcomers-cta .btn,
+.handbook .btn {
+  padding: 12px 30px;
+  background-color: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.newcomers-cta .btn:hover,
+.handbook .btn:hover {
+  background-color: #15407b;
+}
