@@ -24,3 +24,7 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+
+const heroVideo = document.querySelector('.hero-video');
+  heroVideo.playbackRate = 0.5; // 0.5 = half speed, 1 = normal

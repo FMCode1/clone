@@ -20,7 +20,7 @@ gap: 10px;
 }
 
 .logo {
-  width: 30%;
+  width: 80%;
   height: auto;
   max-width: 200px;  /* Responsive fix */
   margin-bottom: 15px; /* Responsive fix */
@@ -67,59 +67,144 @@ color: white;
 }
 
 .hero {
-height: 100vh;
-width: 100%;
-background-color: #000000;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-font-size: 2rem;
-text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin-top: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.4) opacity(0.7); /* darker + slightly transparent */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+  z-index: 1; /* sits above video, below text */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* soft shadow behind letters */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.hero-content h1, .hero-content p {
+  text-shadow: 0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(0,0,0,0.6);
 }
 
 .upcoming-events {
-padding: 60px 40px;
-background-color: #f8f8f8;
-text-align: center;
+  padding: 60px 40px;
+  background-color: #f8f8f8;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .upcoming-events h2 {
-font-size: 2.5rem;
-margin-bottom: 40px;
-color: #1e3a8a;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1e3a8a;
 }
 
+/* Carousel wrapper hides overflow */
+.carousel {
+  overflow: hidden;
+}
+
+/* Events container with smooth infinite rolling */
 .events-container {
-display: flex;
-gap: 30px;
-justify-content: center;
-flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  width: 1680px; /* (250 + 30) * 6 cards */
+  animation: scroll-left 30s linear infinite;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
 }
 
+.events-container::-webkit-scrollbar {
+  display: none; /* hide scrollbar */
+}
+
+/* Individual event card */
 .event-card {
-background: white;
-padding: 20px;
-border-radius: 10px;
-width: 250px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  flex: 0 0 auto;
 }
 
 .event-card h3 {
-margin-top: 0;
-color: #1e3a8a;
+  margin-top: 0;
+  color: #1e3a8a;
 }
 
 .event-date {
-font-weight: bold;
-color: #555;
-margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
 }
 
 .event-desc {
-color: #333;
-font-size: 0.95rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Keyframes for smooth scroll left */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-840px); /* width of 3 cards + gaps */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .event-card {
+    width: 80vw;
+  }
+  .events-container {
+    width: calc((80vw + 30px) * 6);
+  }
 }
 
 .give-life-to-christ {
