@@ -16,11 +16,11 @@ Live:
 Done (Note: Add livestreaming link when available)
 
 Grow:
-Done (Note: Might move Children, Youths, Excellent Men, Good Women and Elders to Newcomers' Page under : A Place for everybody)
+Done
 
 Newcomers:
 
-Add and iframe map to show church location
+Add an iframe map to show church location
 
 Contact
 
