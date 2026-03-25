@@ -183,6 +183,40 @@ nav {
   gap: 20px;
 }
 
+.giving-section {
+  max-width: 65%;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  font-family: inherit;       /* match the site font */
+  font-size: 1.5rem;            /* base font size same as body */
+  line-height: 1.7;           /* comfortable spacing */
+}
+
+.giving-section h2,
+.giving-section h4 {
+  text-align: center;      /* center the headings */
+  color: #1e3a8a;          /* Bootstrap primary blue */
+  margin-bottom: 15px;
+}
+
+.giving-section h4 {
+  margin-top: 20px;
+}
+
+.giving-section p {
+  line-height: 1.6;
+}
+
+.giving-note {
+  margin-top: 20px;
+  padding: 15px;
+  border-left: 4px solid #dc3545;
+  background: #fff5f5;
+}
+
 .btn {
   padding: 12px 25px;
   background-color: #1e3a8a;
@@ -206,6 +240,9 @@ nav {
   background-color: #e08e1f;
 }
 
+.contact-link{
+  text-decoration:none;
+}
 
 .requests {
   padding: 60px 40px;
@@ -631,4 +668,50 @@ nav {
 .newcomers-cta .btn:hover,
 .handbook .btn:hover {
   background-color: #15407b;
+}
+
+.form-wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;  /* horizontal */
+  align-items: center;      /* vertical */
+  height: 100vh;            /* full screen height */
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;   /* increase from 400px → 600px */
+  padding: 30px;      /* more breathing room */
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;   /* more space between fields */
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;   /* bigger inputs */
+    font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #dc3545; /* Bootstrap danger red */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #bb2d3b;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 4px;
 }
