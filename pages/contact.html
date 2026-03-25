@@ -49,7 +49,7 @@
         <form class="contact-form" action="https://formspree.io/f/mreozwge" method="POST">
         
             <!-- Subject Dropdown -->
-            <label for="subject">Subject</label>
+            <label for="subject">To:</label>
             <select id="subject" name="subject" required>
                 <option value="">-- Select an option --</option>
                 <option value="pastorate">Pastorate</option>
@@ -57,10 +57,14 @@
                 <option value="volunteer">Volunteer</option>
                 <option value="prayer">Prayer Request</option>
             </select>
-        
+
             <!-- Email -->
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Email -->
+            <label for="email">Contact</label>
+            <input id="email" name="email" placeholder="Enter your email or phone number" required>
         
             <!-- Message Body -->
             <label for="message">Message</label>
