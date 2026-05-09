@@ -26,5 +26,50 @@ setInterval(updateCountdown, 1000);
 updateCountdown();
 
 
-const heroVideo = document.querySelector('.hero-video');
-  heroVideo.playbackRate = 0.5; // 0.5 = half speed, 1 = normal
+// Wait until page is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+
+ /* =========================
+   HERO IMAGE CAROUSEL
+========================= */
+
+const slides = document.querySelectorAll('.slide');
+
+if (slides.length > 0) {
+  let currentIndex = 0;
+
+  // Ensure first slide is visible
+  slides[currentIndex].classList.add('active');
+
+  function showNextSlide() {
+    slides[currentIndex].classList.remove('active');
+
+    currentIndex = (currentIndex + 1) % slides.length;
+
+    slides[currentIndex].classList.add('active');
+  }
+
+  setInterval(showNextSlide, 4000);
+} else {
+  console.warn("No hero slides found.");
+}
+
+  /* =========================
+     OPTIONAL COUNTDOWN (SAFE)
+     (won’t crash if missing)
+  ========================= */
+  const countdownEl = document.getElementById("countdown");
+
+  if (countdownEl) {
+    function updateCountdown() {
+      const now = new Date();
+      countdownEl.textContent = now.toLocaleTimeString(); // example
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  }
+
+});
+
+console.log('JS File is running')
