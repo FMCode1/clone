@@ -11,6 +11,7 @@ align-items: center;
 padding: 20px 40px;
 background-color: #f8f8f8;
 flex-wrap: wrap;  /* Responsive fix */
+height:180px;
 }
 
 .header-item {
