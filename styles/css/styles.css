@@ -348,6 +348,27 @@ color: white;
 background-color: #e08e1f;
 }
 
+.background-pic {
+  background-image: url('../../images/pastorsaddress.jpeg');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: 100%;
+  background-position: center top;
+  opacity:0.9;
+}
+
+.pastors-image-container {
+  display:flex;
+  justify-content:center;
+}
+
+.pastors-image {
+  width:70%;
+  border-radius: 50px;
+  border: 50px, yellow;
+
+}
+
 .contact-link{
 text-decoration:none;
 }
