@@ -551,14 +551,14 @@ max-width: 1200px;
 margin: 0 auto;
 }
 
-.about-page h2, p {
+.about-page h2,
+.about-page p {
   text-align: center;
 }
 
 .about-section {
-  height: 100vh;
   margin: 100px;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
 .about-section h2 {
@@ -598,6 +598,16 @@ margin-bottom: 10px;
 .value-card p {
 font-size: 0.95rem;
 color: #555;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    margin: 20px;
+  }
+
+  .value-card {
+    padding: 15px;
+  }
 }
 
 /* Live Page */
@@ -850,6 +860,7 @@ height: 100vh;
 
 .contact-form {
 width: 100%;
+margin: 80px;
 max-width: 600px;
 padding: 30px;
 border-radius: 10px;
